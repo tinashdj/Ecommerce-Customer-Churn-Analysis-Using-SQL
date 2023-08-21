@@ -35,3 +35,9 @@ COPY ecommerce (CustomerID, Churn, Tenure, PreferredLoginDevice,
 FROM 'E:\Data Analyst\Projects\E Commerce\E_Commerce.csv'
 DELIMITER ';'
 CSV HEADER;
+
+
+
+-- language: postgresql
+-- or
+-- lang: pgsql
