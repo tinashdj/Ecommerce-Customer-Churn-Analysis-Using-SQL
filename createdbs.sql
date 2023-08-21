@@ -38,6 +38,4 @@ CSV HEADER;
 
 
 
--- language: postgresql
--- or
--- lang: pgsql
+language: postgresql
