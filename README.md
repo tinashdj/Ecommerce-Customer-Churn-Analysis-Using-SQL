@@ -28,6 +28,7 @@ This analysis is divided into several steps:
    - Non-churned customers use more coupon compared to churned customers. This shows the loyalty and engagement between non churned customers with the company.
    - Churned customers have a short time since their last order (avg only 3 days) that they recently stopped engaging with the platform.
 5. Recommendations
+
    a. Enhance the UI/UX friendly for customers who prefer logging in via a computer to make customers can use the app easily. Conduct research to identify any issues they might be facing while login by computer.
 
    b. Conduct research to identify the customers behaviors based on city tier. Tailor retention strategies based on the different city tiers. Understand the preferences and behaviors of customers in each tier to provide targeted offerings.
