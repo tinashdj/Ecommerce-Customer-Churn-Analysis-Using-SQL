@@ -4,13 +4,13 @@ This dataset from [Kaggle](https://www.kaggle.com/datasets/ankitverma2010/ecomme
 The data set belongs to a leading online E-Commerce company. An online retail (E commerce) company wants to know the customers who are going to churn, so accordingly they can approach customer to offer some promos.
 
 This analysis is divided into several steps: 
-## 1. Data cleaning
+## 1. Data Cleaning
    - Checking for duplicate rows
    - Checking for null values
    - Handling for null values
    - Handling inconsistency values
    - Creating new columns for additional information
-## 3. Data exploration
+## 3. Data Exploration
 ## 4. Business Insights
    - The dataset contains 5,630 customers with overall churn rate 16,84%.
    - Customers who prefer login with a computer have slightly higher churn rate compared to login with a phone suggesting different usage patterns and preferences. This may indicate that customers who access the ecommerce with computer might have different usage patterns, preferences, or experiences that contribute to a higher likelihood of churn.
