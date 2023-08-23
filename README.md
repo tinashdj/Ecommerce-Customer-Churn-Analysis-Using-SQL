@@ -4,14 +4,14 @@ This dataset from [Kaggle](https://www.kaggle.com/datasets/ankitverma2010/ecomme
 The data set belongs to a leading online E-Commerce company. An online retail (E commerce) company wants to know the customers who are going to churn, so accordingly they can approach customer to offer some promos.
 
 This analysis is divided into several steps: 
-1. Data cleaning
+## 1. Data cleaning
    - Checking for duplicate rows
    - Checking for null values
    - Handling for null values
    - Handling inconsistency values
    - Creating new columns for additional information
-3. Data exploration
-4. Business Insights
+## 3. Data exploration
+## 4. Business Insights
    - The dataset contains 5,630 customers with overall churn rate 16,84%.
    - Customers who prefer login with a computer have slightly higher churn rate compared to login with a phone suggesting different usage patterns and preferences. This may indicate that customers who access the ecommerce with computer might have different usage patterns, preferences, or experiences that contribute to a higher likelihood of churn.
    - The city tier affects on customers churns rate. Tier 3 cities have higher churn rate than Tier 1 and Tier 2 cities, possibly due to behavior and customer preferences.
@@ -27,7 +27,7 @@ This analysis is divided into several steps:
    - The total of customers complain is less than customers do not complain, but the customer churn of the customers who complained is higher than not complain.
    - Non-churned customers use more coupon compared to churned customers. This shows the loyalty and engagement between non churned customers with the company.
    - Churned customers have a short time since their last order (avg only 3 days) that they recently stopped engaging with the platform.
-5. Recommendations
+## 5. Recommendations
 
    a. Enhance the UI/UX friendly for customers who prefer logging in via a computer to make customers can use the app easily. Conduct research to identify any issues they might be facing while login by computer.
 
