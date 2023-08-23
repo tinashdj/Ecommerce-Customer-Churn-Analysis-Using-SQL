@@ -150,16 +150,3 @@ CASE
     WHEN tenure > 12 AND tenure <= 24 THEN '2 Years'
     WHEN tenure > 24 THEN 'More than 2 Years'
 END
-
-------------------------------------cashbackamountrange-----------------------------------
-ALTER TABLE ecommerce
-ADD cashbackamountrange VARCHAR (50)
-
-UPDATE ecommerce
-SET cashbackamountrange =
-CASE 
-    WHEN cashbackamount <= 100 THEN 'Low Cashback Amount'
-    WHEN cashbackamount > 100 AND cashbackamount <= 200 THEN 'Moderate Cashback Amount'
-    WHEN cashbackamount > 200 AND cashbackamount <= 300 THEN 'High Cashback Amount'
-    WHEN cashbackamount > 300 THEN 'Very High Cashback Amount'
-END
