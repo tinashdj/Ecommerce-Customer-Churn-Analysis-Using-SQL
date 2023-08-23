@@ -49,18 +49,7 @@ ORDER BY ChurnRate DESC
 ;
 
 ------------------------------------------------------------------------------------------
------------5. What is the most preferred payment mode among churned customers?-----------
-SELECT preferredpaymentmode,
-    COUNT(*) AS TotalCustomer,
-    SUM (churn) AS CustomerChurn,
-    CAST(SUM(churn)*1.0 / COUNT(*) * 100 AS DECIMAL (10,2)) AS ChurnRate
-FROM ecommerce
-GROUP BY preferredpaymentmode
-ORDER BY ChurnRate DESC
-;
-
-------------------------------------------------------------------------------------------
--------------------6. What is the typical tenure for churned customers?-------------------
+-------------------5. What is the typical tenure for churned customers?-------------------
 SELECT TenureRange, 
     COUNT(*) AS TotalCustomer,
     SUM (churn) AS CustomerChurn,
@@ -71,7 +60,7 @@ ORDER BY ChurnRate DESC
 ;
 
 ------------------------------------------------------------------------------------------
------------------7. What is the difference in churn rate based on gender?-----------------
+-----------------6. What is the difference in churn rate based on gender?-----------------
 SELECT gender, 
     COUNT(*) AS TotalCustomer,
     SUM (churn) AS CustomerChurn,
@@ -82,25 +71,14 @@ ORDER BY ChurnRate DESC
 ;
 
 ---------------------------------------------------------------------------------------------------
-----8. How does the average time spent on the app differ for churned and non-churned customers?----
+----7. How does the average time spent on the app differ for churned and non-churned customers?----
 SELECT customerstatus, ROUND(AVG (hourspendonapp)) AS AvgHourSpend
 FROM ecommerce
 GROUP BY customerstatus
 ;
 
 ------------------------------------------------------------------------------------------
----------9. Does the number of registered devices impact the likelihood of churn?---------
-SELECT numberofdeviceregistered, 
-    COUNT(*) AS TotalCustomer,
-    SUM (churn) AS CustomerChurn,
-    CAST(SUM(churn) * 1.0 / COUNT(*) * 100 AS DECIMAL (10,2)) AS ChurnRate
-FROM ecommerce
-GROUP BY numberofdeviceregistered
-ORDER BY ChurnRate DESC
-;
-
-------------------------------------------------------------------------------------------
------------10. What order category is most preferred among churned customers?------------
+-----------8. What order category is most preferred among churned customers?------------
 SELECT preferedordercat, 
     COUNT(*) AS TotalCustomer,
     SUM (churn) AS CustomerChurn,
@@ -111,7 +89,7 @@ ORDER BY ChurnRate DESC
 ;
 
 ------------------------------------------------------------------------------------------
------------------11. What is the churn rate based on satisfaction scores?-----------------
+-----------------9. What is the churn rate based on satisfaction scores?-----------------
 SELECT satisfactionscore, 
     COUNT(*) AS TotalCustomer,
     SUM (churn) AS CustomerChurn,
@@ -122,18 +100,7 @@ ORDER BY ChurnRate DESC
 ;
 
 ------------------------------------------------------------------------------------------
---------------12. Does the marital status of customers impact the churn rate?-------------
-SELECT maritalstatus, 
-    COUNT(*) AS TotalCustomer,
-    SUM (churn) AS CustomerChurn,
-    CAST(SUM(churn) * 1.0 / COUNT(*) * 100 AS DECIMAL (10,2)) AS ChurnRate
-FROM ecommerce
-GROUP BY maritalstatus
-ORDER BY ChurnRate DESC
-;
-
-------------------------------------------------------------------------------------------
----------------------13. Do customer complaints impact the churn rate?--------------------
+---------------------10. Do customer complaints impact the churn rate?--------------------
 SELECT complainstatus, 
     COUNT(*) AS TotalCustomer,
     SUM (churn) AS CustomerChurn,
@@ -144,26 +111,15 @@ ORDER BY ChurnRate DESC
 ;
 
 ------------------------------------------------------------------------------------------
-----14. How does the use of coupons differ between churned and non-churned customers?-----
+----11. How does the use of coupons differ between churned and non-churned customers?-----
 SELECT customerstatus, SUM(couponused) AS Totalcouponused
 FROM ecommerce
 GROUP BY customerstatus
 ;
 
 ------------------------------------------------------------------------------------------
-----15. What is the average number of days since the last order for churned customers?----
+----12. What is the average number of days since the last order for churned customers?----
 SELECT ROUND(AVG(daysincelastorder)) AS AvgDaysSInceLastOrder
 FROM ecommerce
 WHERE customerstatus = 'Churned'
-;
-
-------------------------------------------------------------------------------------------
------------16. Is there any correlation between cashback amount and churn rate?-----------
-SELECT cashbackamountrange,
-    COUNT(*) AS totalcustomer,
-    SUM (churn) AS customerchurn,
-    CAST(SUM (churn) * 1.0 / COUNT(*) * 100 AS DECIMAL (10,2)) AS Churnrate
-FROM ecommerce
-GROUP BY cashbackamountrange
-ORDER BY churnrate DESC
 ;
