@@ -32,11 +32,11 @@ This analysis is divided into several steps:
    a. Enhance the UI/UX friendly for customers who prefer logging in via a computer to make customers can use the app easily. Conduct research to identify any issues they might be facing while login by computer.
 
    b. Conduct research to identify the customers behaviors based on city tier. Tailor retention strategies based on the different city tiers. Understand the preferences and behaviors of customers in each tier to provide targeted offerings.
+   
+   c. Optimize logistics and delivery to improve customer retention. Focus on reducing delivery times, lowering shipping costs, and finding ways to make the process more convenient, especially for customers living further away.
 
-    c. Optimize logistics and delivery to improve customer retention. Focus on reducing delivery times, lowering shipping costs, and finding ways to make the process more convenient, especially for customers living further away.
+   d. Develop targeted retention initiatives for specific order categories, especially “Mobile Phone” category. Offer discounts, cashbacks or lower the price, to improve customers engagement loyalty and to prevent higher customer churn.
 
-    d. Develop targeted retention initiatives for specific order categories, especially “Mobile Phone” category. Offer discounts, cashbacks or lower the price, to improve customers engagement loyalty and to prevent higher customer churn.
-
-    e. Improve service quality and address customer service issues promptly across all satisfaction level and complains. Identify and address common service failure issues, enhance customer support channels, and implement proactive service monitoring and troubleshooting. Actively listen to customers feedback, make necessary improvements, and demonstrate a commitment to addressing their concerns.
+   e. Improve service quality and address customer service issues promptly across all satisfaction level and complains. Identify and address common service failure issues, enhance customer support channels, and implement proactive service monitoring and troubleshooting. Actively listen to customers feedback, make necessary improvements, and demonstrate a commitment to addressing their concerns.
 
 
